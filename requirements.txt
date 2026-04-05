@@ -1,0 +1,11 @@
+streamlit
+pandas
+openpyxl
+scikit-learn
+plotly
+xlsxwriter
+wordcloud
+matplotlib
+groq
+arabic-reshaper
+python-bidi
