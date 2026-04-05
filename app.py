@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -858,7 +859,7 @@ with tab_discover:
                 reshaped_words[bidi_text] = freq
             wc = WordCloud(
                 width=700, height=400, background_color="white",
-                font_path="C:/Windows/Fonts/tahoma.ttf",
+                font_path=os.path.join(os.path.dirname(__file__), "tahoma.ttf"),
                 max_words=120, colormap="viridis", prefer_horizontal=0.7, min_font_size=10,
             )
             wc.generate_from_frequencies(reshaped_words)
